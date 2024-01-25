@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class leapyear
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the year");
+        int year=s.nextInt();
+        if(year%4==0)
+        {
+            System.out.println("it is leap year");
+        }
+        else
+        {
+           int l=4-(year%4);
+            System.out.println("wait for "+l+ " years ");
+        }
+    }
+}
