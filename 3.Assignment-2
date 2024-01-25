@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class SimpleEmailValidator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an email address: ");
+        String email = scanner.nextLine();
+        if (isValidEmail(email)) {
+            System.out.println("The email is valid.");
+        } else {
+            System.out.println("The email is not valid.");
+        }
+        scanner.close();
+    }
+    public static boolean isValidEmail(String email) {
+        if (email.contains("@") && email.contains(".")) {
+            if (email.indexOf('@') < email.indexOf('.')) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
