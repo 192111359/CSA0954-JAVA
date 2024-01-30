@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+class Marks
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.print("enter marks in first subject:");
+int a1=s.nextInt();
+System.out.print("enter marks in second subject:");
+int a2=s.nextInt();
+System.out.print("enter marks in third subject:");
+int a3=s.nextInt();
+System.out.print("enter marks in fourth subject:");
+int a4=s.nextInt();
+int total=(a1+a2+a3+a4);
+float agg=total/4f;
+System.out.println("total="+total);
+System.out.println("agg="+agg);
+if(agg>75){
+System.out.println("DISTINCTION");
+}
+else if(agg>=60 && agg<75){
+System.out.println("FIRST DISTINCTION");
+}
+else if(agg>=50 && agg<60){
+System.out.println("SECOND DISTINCTION");
+}
+else if(agg>=40 && agg<50){
+System.out.println("THIRD DISTINCTION");
+}
+else{
+System.out.println("FAIL");
+}
+}
+}
