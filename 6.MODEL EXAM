@@ -1,0 +1,41 @@
+package p1;
+import java.util.Scanner;
+class Bank
+{
+    float getROI()
+   {
+    return 0;
+   }
+}
+class SBI extends Bank
+{
+    float getROI()
+    {
+    return 8.4f;
+    }
+}
+class ICICI extends Bank
+{
+    float getROI()
+    {
+    return 8.4f;
+    }
+}
+class AXIS extends Bank
+{
+    float getROI()
+    {
+     return 8.4f;
+     }
+}
+public class Q6 
+{
+ public static void main(String[] args)
+ {
+Scanner s=new Scanner(System.in);
+    Bank b;
+   b = new SBI();
+   String s1=s.nextLine();
+   System.out.println("SBI, " + b.getROI());
+ }
+}
